@@ -1,0 +1,87 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.img-container {
+    position: relative;
+
+}
+
+img {
+    border-radius: 8px;
+    border: 1px solid rgb(206, 189, 189);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.nome-imagem p {
+    font-size: 30px;
+    color: white;
+    transition: font-size 0.3s, color 0.3s;
+    margin-top: 12px;
+}
+
+.nome-imagem {
+    height: 25%;
+    overflow: hidden;
+}
+
+.nome-imagem div {
+    max-height: 40vh;
+    overflow: hidden;
+}
+
+.nome-imagem:hover p {
+    font-size: 28px;
+    color: red;
+    cursor: pointer;
+}
+
+.nome-imagem:hover img {
+    transform: scale(1.1);
+}
+
+
+.col-md-3,
+.nome-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensagem-nao-encontrado {
+    display: none;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 20px;
+    color: red;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 765px) {
+
+    .nome-imagem img {
+        width: auto;
+        height: auto;
+    }
+
+    .nome-imagem div {
+        max-height: 65vh;
+    }
+
+    .col-md-3,
+    .nome-imagem {
+        padding: 0 30%;
+    }
+}

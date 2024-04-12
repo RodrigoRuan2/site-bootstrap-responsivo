@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/sript.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="/js/Home links.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="goToHomePage()">FLAMESANIMES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="pageNavigation('novidades')">Novidades</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ANIMES
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li onmouseup="pageNavigation('filmes')"><a class="dropdown-item" href="#">Filmes</a></li>
+                            <li onmouseup="pageNavigation('legendados')"><a class="dropdown-item"
+                                    href="#">Legendados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="pesquisa" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search"
+                        oninput="filtrarImagens()">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/carrosel/tate no.jpg" class="d-block w-100" alt="..."  id="carousel1">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/carrosel/sky x family.png " class="d-block w-100" alt="..." id="carousel2">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/carrosel/frieren.jpg" class="d-block w-100" alt="..." id="carousel3">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/carrosel/shadow.jpg" class="d-block w-100" alt="..." id="carousel4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="nome text-center  fst-italic ">
+        <h1>ANIME-FLAMES</h1>
+    </div>
+
+    <div class="container  fst-italic">
+        <h2>ANIMES</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 nome-imagem">
+                <img src="img/flames.jpg" class="img-fluid" alt="" data-nome="Saijaku Tamer wa Gomi">
+                <p>Saijaku Tamer wa Gomi Hiroi no Tabi</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/1.jpg" class="img-fluid" alt="" data-nome="kami wa game">
+                <p>Kami wa Game</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/ookami.jpg" class="img-fluid" alt="" data-nome="ookami to koushin">
+                <p>Ookami to Koushin</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/wind.jpg" class="img-fluid" alt="" data-nome="wind breaker">
+                <p>Wind Breaker</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 nome-imagem">
+                <img src="img/ninja kamui.jpg" class="img-fluid" alt="" data-nome="Ninja Kamui">
+                <p>Ninja Kamui</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/solo.jpg" class="img-fluid" alt="" data-nome="solo leveling">
+                <p>Solo Leveling</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/re monster.jpg" class="img-fluid" alt="" data-nome="Re monster">
+                <p>Re Monster</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/one piece.jpg" class="img-fluid" alt="" data-nome="One piece">
+                <p>One piece</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 nome-imagem">
+                <img src="img/angel.jpg" class="img-fluid" alt="" data-nome="One Room, Hiatari Futsuu, Tenshi-tsuki">
+                <p>One Room, Hiatari Futsuu, Tenshi-tsuki</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/assasin.jpg" class="img-fluid" alt="" data-nome="Yozakura-san Chi no Daisakusen">
+                <p>Yozakura-san Chi no Daisakusen</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/meshi.jpg" class="img-fluid" alt="" data-nome="dungeon meshi">
+                <p>Dungeon Meshi</p>
+            </div>
+            <div class="col-md-3 nome-imagem">
+                <img src="img/yuru camp.jpg" class="img-fluid" alt="" data-nome="Yuru camp">
+                <p>Yuru camp</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mensagem-nao-encontrado" style="display: none;">Nenhum resultado encontrado.</div>
+
+</body>
+
+</html>

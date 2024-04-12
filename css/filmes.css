@@ -1,0 +1,80 @@
+
+.nome {
+    color: white;
+}
+.container {
+    background-color: transparent;
+    color: white;
+}
+body.custom-body {
+    background-color: black;
+}
+.text {
+    flex: 1;
+}
+
+.text h4 {
+    margin: 10px;
+    cursor: pointer;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5vw; /* Tamanho da fonte em relação à largura da viewport */
+}
+.text p {
+    margin: 10px;
+    padding: 0px;
+    font-size: 2vw; /* Tamanho da fonte em relação à largura da viewport */
+}
+
+.red-on-hover:hover {
+    color: red;
+}
+.link-like-text {
+    color: white;
+    text-decoration: none;
+}
+
+.link-like-text:hover {
+    color: red;
+}
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+    object-fit: cover; 
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    border-radius: 8px;
+    border: 1px solid rgb(206, 189, 189);
+}
+
+.img-fluid:hover {
+    transform: scale(1.1); 
+}
+
+.img-fluid:hover {
+    transform: scale(1.1); 
+}
+#mensagem-nenhum-resultado {
+    display: none;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 20px;
+    color: red;
+}
+.texto-associado {
+    font-size: 1em; /* Tamanho médio de fonte */
+}
+@media only screen and (max-width: 770px) {
+    .img-fluid {
+        max-width: 100%; /* Define a largura máxima como 100% */
+        height: auto;
+        object-fit: cover; /* Mantém a proporção da imagem */
+    }
+    .text h4 {
+        font-size: 4vw; /* Tamanho da fonte em relação à largura da viewport */
+    }
+
+    .text p {
+        font-size: 3.5vw; /* Tamanho da fonte em relação à largura da viewport */
+    }
+}

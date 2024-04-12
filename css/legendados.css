@@ -1,0 +1,53 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body.custom-body {
+    background-color: black;
+    color: white;
+}
+.container {
+    border-radius: 8px;
+    padding: 1px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#legendados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 100%; 
+    transition: transform 0.3s ease;
+    display: block;
+    cursor: pointer;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+#legendados .col {
+    flex: 0 0 45%; 
+    margin-bottom: 10px; 
+}
+#legendados img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+.card {
+    background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+
+        .card {
+        margin-top: 30px;
+        width: 50%;
+        height: auto;
+    }
+
+}
